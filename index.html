@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevOps CI/CD Pipeline</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background: linear-gradient(135deg,#0f172a,#1e293b,#334155);
+color:white;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:30px;
+}
+
+.container{
+max-width:1100px;
+width:100%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.left h1{
+font-size:52px;
+margin-bottom:20px;
+line-height:1.1;
+}
+
+.left h1 span{
+color:#38bdf8;
+}
+
+.left p{
+font-size:18px;
+color:#cbd5e1;
+margin-bottom:25px;
+line-height:1.6;
+}
+
+.badges{
+display:flex;
+gap:12px;
+flex-wrap:wrap;
+margin-bottom:25px;
+}
+
+.badges span{
+background:#1e40af;
+padding:10px 16px;
+border-radius:30px;
+font-size:14px;
+}
+
+button{
+padding:14px 28px;
+border:none;
+background:#38bdf8;
+color:#0f172a;
+font-size:16px;
+font-weight:bold;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:translateY(-3px);
+background:#7dd3fc;
+}
+
+.right{
+background:rgba(255,255,255,0.08);
+padding:30px;
+border-radius:20px;
+backdrop-filter: blur(10px);
+box-shadow:0 15px 35px rgba(0,0,0,0.35);
+}
+
+.card{
+padding:18px;
+margin-bottom:15px;
+background:rgba(255,255,255,0.07);
+border-radius:14px;
+}
+
+.card h3{
+margin-bottom:8px;
+color:#38bdf8;
+}
+
+footer{
+margin-top:25px;
+font-size:14px;
+color:#94a3b8;
+}
+
+@media(max-width:900px){
+.container{
+grid-template-columns:1fr;
+}
+.left h1{
+font-size:40px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="left">
+<h1>Deploy Faster with <span>CI/CD Pipeline</span></h1>
+<p>
+Automated deployment of Dockerized applications on Kubernetes using Jenkins.
+Build once, test continuously, deploy confidently.
+</p>
+
+<div class="badges">
+<span>Docker</span>
+<span>Jenkins</span>
+<span>Kubernetes</span>
+<span>Automation</span>
+</div>
+
+<button onclick="alert('Pipeline Triggered Successfully 🚀')">
+Run Pipeline
+</button>
+
+<footer>
+Created for Essentials in Cloud & DevOps Practical
+</footer>
+</div>
+
+<div class="right">
+
+<div class="card">
+<h3>1. Continuous Integration</h3>
+<p>Code pushed to repository triggers Jenkins build automatically.</p>
+</div>
+
+<div class="card">
+<h3>2. Docker Build</h3>
+<p>Application is packaged into lightweight containers.</p>
+</div>
+
+<div class="card">
+<h3>3. Kubernetes Deploy</h3>
+<p>Containers deployed with scaling and self-healing support.</p>
+</div>
+
+<div class="card">
+<h3>4. Fast Delivery</h3>
+<p>Reliable and repeatable software delivery process.</p>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
