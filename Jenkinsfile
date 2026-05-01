@@ -15,24 +15,16 @@ pipeline {
             }
         }
 
-        stage('Load Image to Minikube') {
-            steps {
-                bat 'minikube image load myapp:v2'
-            }
-        }
-
         stage('Deploy to Kubernetes') {
             steps {
                 bat '''
                 set KUBECONFIG=C:\\Users\\mailt\\.kube\\config
-                kubectl set image deployment/myapp myapp=myapp:v2 --record || exit 0
                 kubectl apply -f deployment.yaml
                 kubectl rollout restart deployment myapp
                 kubectl rollout status deployment/myapp
                 '''
             }
         }
-
     }
 
     post {
