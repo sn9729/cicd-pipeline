@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: myapp:v1
+        image: myapp:v2
         imagePullPolicy: Never
         resources:
           requests:
